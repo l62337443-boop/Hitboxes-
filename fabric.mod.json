@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "nova_hitbox_expander",
+  "version": "${version}",
+  "name": "NOVA Hitbox Expander",
+  "description": "Expands living entity hitboxes in single-player worlds.",
+  "authors": ["NOVA"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.nova.hitbox.NovaHitboxExpander"],
+    "client": ["com.nova.hitbox.client.NovaHitboxClient"]
+  },
+  "mixins": ["nova_hitbox_expander.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
